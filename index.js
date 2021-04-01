@@ -28,10 +28,6 @@ io.on("connection", (socket) => {
     }
     //socket.join() joins a user in a room
     socket.join(user.room);
-    io.to(user.room).emit("roomData", {
-      room: user.room,
-      users: getUsersInRoom(user.room),
-    });
     socket.emit("message", {
       userName: "Admin",
       text: `Welcome ${user.userName} to room ${user.room}`,
@@ -41,6 +37,12 @@ io.on("connection", (socket) => {
       userName: "Admin",
       text: `${user.userName} has joined!`,
     });
+
+    io.to(user.room).emit("roomData", {
+      room: user.room,
+      users: getUsersInRoom(user.room),
+    });
+    callback();
   });
 
   socket.on("sendMessage", (message, callback) => {
