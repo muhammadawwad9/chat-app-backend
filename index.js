@@ -1,4 +1,5 @@
 const express = require("express");
+const http = require("http");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const socketio = require("socket.io");
@@ -7,12 +8,10 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 dotenv.config();
 const port = process.env.PORT || 4000;
 const app = express();
-
+const server = http.createServer(app);
 app.use(cors());
 app.use(router);
-const server = app.listen(port, () =>
-  console.log(`Server is running on port ${port}`)
-);
+server.listen(port, () => console.log(`Server is running on port ${port}`));
 const io = socketio(server);
 
 io.on("connection", (socket) => {
