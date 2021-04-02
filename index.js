@@ -13,11 +13,7 @@ app.use(router);
 const server = app.listen(port, () =>
   console.log(`Server is running on port ${port}`)
 );
-const io = socketio(server, {
-  cors: {
-    origin: "*",
-  },
-});
+const io = socketio(server);
 
 io.on("connection", (socket) => {
   console.log("We have a new connection!!!");
@@ -68,5 +64,6 @@ io.on("connection", (socket) => {
       });
     }
     console.log("User had left!!!");
+    socket.destroy();
   });
 });
