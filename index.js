@@ -1,5 +1,4 @@
 const express = require("express");
-const http = require("http");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const socketio = require("socket.io");
@@ -8,12 +7,16 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 dotenv.config();
 const port = process.env.PORT || 4000;
 const app = express();
-const server = http.createServer(app);
+const server = app.listen(port, () =>
+  console.log(`Server is running on port ${port}`)
+);
 app.use(cors());
 app.use(router);
-server.listen(port, () => console.log(`Server is running on port ${port}`));
-const io = socketio(server);
-io.set("origins", "https://festive-saha-d99c2d.netlify.app/");
+const io = socketio(server, {
+  cors: {
+    origin: "https://festive-saha-d99c2d.netlify.app/",
+  },
+});
 io.on("connection", (socket) => {
   console.log("We have a new connection!!!");
   socket.on("join", ({ userName, room }, callback) => {
