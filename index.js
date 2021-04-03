@@ -14,7 +14,7 @@ app.use(cors());
 app.use(router);
 const io = socketio(server, {
   cors: {
-    origin: "https://festive-saha-d99c2d.netlify.app/",
+    origins: "https://festive-saha-d99c2d.netlify.app/",
   },
 });
 io.on("connection", (socket) => {
