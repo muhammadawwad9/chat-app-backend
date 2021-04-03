@@ -13,7 +13,7 @@ app.use(cors());
 app.use(router);
 server.listen(port, () => console.log(`Server is running on port ${port}`));
 const io = socketio(server);
-
+io.set("origins", "https://festive-saha-d99c2d.netlify.app/");
 io.on("connection", (socket) => {
   console.log("We have a new connection!!!");
   socket.on("join", ({ userName, room }, callback) => {
