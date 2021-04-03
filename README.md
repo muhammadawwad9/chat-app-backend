@@ -24,7 +24,7 @@
 
 
   
-  <h3 id="technologies"><b>Technologies used (Frontend):</b></h3>
+  <h3 id="technologies"><b>Technologies used (Backend):</b></h3>
   
   
   
