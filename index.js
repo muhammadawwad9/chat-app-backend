@@ -11,11 +11,7 @@ const app = express();
 const server = http.createServer(app);
 app.use(cors());
 app.use(router);
-const io = socketio(server, {
-  cors: {
-    origin: "*",
-  },
-});
+const io = socketio(server);
 io.on("connection", (socket) => {
   console.log("We have a new connection!!!");
   socket.on("join", ({ userName, room }, callback) => {
