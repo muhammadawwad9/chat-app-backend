@@ -12,6 +12,10 @@ const addUser = ({ id, room, userName }) => {
     return {
       error: "Username must be between 4-12 characters",
     };
+  else if (room.length > 16)
+    return {
+      error: "Room can be max 16 characters",
+    };
 
   const existingUser = users.find((user) => user.userName == userName);
   if (existingUser) {
