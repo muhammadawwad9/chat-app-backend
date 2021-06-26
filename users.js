@@ -4,13 +4,22 @@ let users = [];
 const addUser = ({ id, room, userName }) => {
   userName = userName.trim().toLowerCase();
   room = room.trim().toLowerCase();
-  const existingUser = users.find(
-    (user) => user.room == room && user.userName == userName
-  );
-  if (existingUser)
+  if (!userName || !room)
     return {
-      error: "Username is taken.",
+      error: "Please Fill Up The Fields",
     };
+  else if (userName.length > 12 || userName.length < 4)
+    return {
+      error: "Username must be between 4-12 characters",
+    };
+
+  const existingUser = users.find((user) => user.userName == userName);
+  if (existingUser) {
+    return {
+      error: "Someone is using this username right now.",
+    };
+  }
+
   const user = {
     id,
     room,
