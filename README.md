@@ -23,7 +23,7 @@
 
 
     <p align="center"><img  width="200" src="https://github.com/muhammadawwad9/chat-app-frontend/blob/main/public/images/screenshot1.png"/></p>
-    <p align="center"><img src="https://github.com/muhammadawwad9/chat-app-frontend/blob/main/public/images/screenshot2.png"/></p>
+    <p align="center"><img src="https://github.com/muhammadawwad9/chat-app-frontend/blob/main/public/images/screenshot1.png"/></p>
 
 
   
