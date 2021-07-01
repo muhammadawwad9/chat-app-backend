@@ -13,7 +13,7 @@
   </p>
   
   
-<h1 align="center"><a href="https://festive-saha-d99c2d.netlify.app/">Start Chatting</a></h1>
+<h1 align="center"><a href="https://join-and-enjoy.netlify.app/">Start Chatting</a></h1>
 
 
 <h3 id="screenshots"><b>Screenshots for the app:</b></h3>
