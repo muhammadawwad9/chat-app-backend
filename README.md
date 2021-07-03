@@ -8,8 +8,8 @@
 
 
 <p>
-    In this app, all you need is to enter a username and a room, and start chatting with friends in that room, enjoy!
-  </p>
+In this website, all you need to do is to choose a unique username and enter a specific room, then you can enjoy chatting with friends in the same room.
+</p>
   
   
 <h1 align="center"><a href="https://join-and-enjoy.netlify.app/">Start Chatting</a></h1>
