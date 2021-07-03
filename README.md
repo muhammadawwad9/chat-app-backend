@@ -1,8 +1,5 @@
 <h1><b>Chat App</b></h1>
 
-* <a href="#description">Description</a>
-* <a href="#technologies">Technologies used (Backend)</a>
-* <a href="https://github.com/muhammadawwad9/chat-app-frontend">View the frontend repository</a>
 
 <h3 id="description"><b>Description:</b></h3>
 
