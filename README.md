@@ -26,4 +26,4 @@
   * WebSockets (socket.io)
 
 
-<h3><b>To view the backend repository </b><a href="https://github.com/muhammadawwad9/chat-app-frontend">click here</a></h3>
+<h3><b>To view the frontend repository </b><a href="https://github.com/muhammadawwad9/chat-app-frontend">click here</a></h3>
