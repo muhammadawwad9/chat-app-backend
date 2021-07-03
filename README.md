@@ -1,7 +1,6 @@
 <h1><b>Chat App</b></h1>
 
 * <a href="#description">Description</a>
-* <a href="#screenshots">Screenshots</a>
 * <a href="#technologies">Technologies used (Backend)</a>
 * <a href="https://github.com/muhammadawwad9/chat-app-frontend">View the frontend repository</a>
 
@@ -16,15 +15,6 @@
 <h1 align="center"><a href="https://join-and-enjoy.netlify.app/">Start Chatting</a></h1>
 
 
-<h3 id="screenshots"><b>Screenshots for the app:</b></h3>
-
-
-
-
-
-
-<p align="center"><img  width="280px" src="https://github.com/muhammadawwad9/chat-app-frontend/blob/main/public/images/screenshot1.png"/> </p>
-<p align="center"><img  width="280px" src="https://github.com/muhammadawwad9/chat-app-frontend/blob/main/public/images/screenshot2.png"/> </p>
 
   
   <h3 id="technologies"><b>Technologies used (Backend):</b></h3>
